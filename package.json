@@ -7,8 +7,8 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "docker:run": "docker run -d -p 8001:80 luogc/cicd-fe:$(git rev-parse --short HEAD)",
-    "docker:build": "docker build -t luogc/cicd-fe:$(git rev-parse --short HEAD) ."
+    "docker:run": "docker run -d -p 8001:80 luogc/cicd-fe:$(git describe --tags `git rev-list --tags --max-count=1`)",
+    "docker:build": "docker build -t luogc/cicd-fe:$(git describe --tags `git rev-list --tags --max-count=1`) ."
   },
   "dependencies": {
     "vue": "^3.2.41"
