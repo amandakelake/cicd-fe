@@ -13,6 +13,7 @@ import HelloWorld from './components/HelloWorld.vue'
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
+    <h2>CICD</h2>
   <HelloWorld msg="Vite + Vue" />
 </template>
 
